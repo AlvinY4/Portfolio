@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: darkgray;
+}
+
+/* Header Styles */ 
+header {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkslategray;
+    color: #ffff;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+/* Anchor Links Styles*/ 
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+header nav ul li a:hover {
+    background: darkslategray;
+    color: dodgerblue;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+/* Hero Section Styles */ 
+
+p{
+    font-size: 16px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.Bio {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: grey;
+    color: #ffff;
+    margin: 30px 30px 30px 30px; 
+    box-shadow: 0 0 20px black; 
+    border-style: solid;
+    border-width: 10px;
+    border-color: darkgrey; 
+}
+
+.Bio h2 {
+    text-align: center;
+}
+
+.Bio img {
+    position: relative;
+    bottom: 40px;
+}
+
+
