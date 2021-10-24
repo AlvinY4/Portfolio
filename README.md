@@ -1,0 +1,3 @@
+# Alvin Yearby Advanced CSS Challenge: Professional Portfolio
+
+For this challege I created a professional porfolio using the knowledge of HTML and CSS that I have learned so far. I used flex box and containers and media queries so that the contents in my portfolio would adjust to any smaller screen size that it will be presented on. I also used CSS to give the portfolio and layout and design to make it look somewhat presentable. 
