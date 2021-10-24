@@ -10,14 +10,19 @@ body {
 
 /* Header Styles */ 
 header {
-    padding: 20px;
+    background: darkslategray;
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: darkslategray;
     color: #ffff;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: 1; 
+    z-index: 1;
+
 }
 
 header h1 {
@@ -55,8 +60,7 @@ a {
     text-decoration: none;
 }
 
-/* Hero Section Styles */ 
-
+/* Hero and About Me Section Styles */ 
 p{
     font-size: 16px;
 }
@@ -79,8 +83,8 @@ p{
 }
 
 .Bio p {
-    line-height: 1.7;
-    width: 80%;
+    line-height: 1.5;
+    width: 95%;
     font-size: 20px;
     margin: 0 auto;
     text-align: center;
@@ -96,8 +100,7 @@ p{
     
 }
 
-/* My Work Styles */
-
+/* My Work section Styles */
 #my-work {
     padding: 50px;
 }
@@ -146,13 +149,21 @@ p{
     text-align: center;
 }
 
-
+/* Resume Section Styles */ 
 .resumes {
     padding: 50px;
     height: 300px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: grey;
     color: #ffff;
+}
+
+.resumes p {
+    line-height: 1.5;
+    width: 95%;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* Footer Styles */ 
@@ -182,6 +193,7 @@ footer nav ul li a {
 
 /* Media Query for smaller desktop screens */ 
 @media screen and (max-width:900px) {
+    
     header {
         padding-bottom: 0;
         justify-content: center;
@@ -197,6 +209,7 @@ footer nav ul li a {
         margin-top: 20px;
         width: 100%;
         justify-content: center;
+        
     }
 
     header nav ul li a {
@@ -222,17 +235,42 @@ footer nav ul li a {
     }
 
 }
-
-/* Media Query for tablets and smaller */ 
+/* Media Query for tablets and smaller */
 @media screen and (max-width:768px){
     section {
         padding: 30px 15px;
+    }
+
+    .Bio p {
+        width: 100%;
+        font-size: 15px;
     }
 
     #my-work {
         flex: 2 100%;
         text-align: center;
         justify-content: center;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .container nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 0.8em 0;
+    }
+
+    .resumes p {
+        width: 100%;
+        font-size: 15px;
     }
 }
 
@@ -248,12 +286,14 @@ footer nav ul li a {
 
     .Bio p {
         width: 100%;
-        font-size: 20px;
+        font-size: 10px;
     }
 
     #my-work{
         flex: 0 100%; 
     }
 
-}
-
+    .resumes p {
+        width: 100%;
+        font-size: 10px;
+    }
