@@ -61,16 +61,14 @@ p{
     font-size: 16px;
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
+#about-me {
+    padding: 50px;
+    height: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: grey;
 }
 
 .Bio {
-    padding: 50px;
-    height: 400px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: grey;
     color: #ffff;
 }
 
@@ -80,12 +78,22 @@ p{
     font-size: 40px; 
 }
 
-.Bio img {
-    position: relative;
+.Bio p {
+    line-height: 1.7;
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.float-left {
     bottom: 65px;
     border-style: solid;
     border-color: darkgrey;
     border-width: 10px;
+    display: block;
+    margin: 0 auto 35px auto;
+    
 }
 
 /* My Work Styles */
@@ -168,3 +176,84 @@ footer nav ul li a {
     color: #ffff; 
     font-size: 20px;
 }
+
+
+/* Media Query Styles Start */ 
+
+/* Media Query for smaller desktop screens */ 
+@media screen and (max-width:900px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    footer h2, footer nav ul li {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section-title {
+        width: 80%;
+    }
+
+    .work {
+        flex: 0 70%;
+    }
+
+}
+
+/* Media Query for tablets and smaller */ 
+@media screen and (max-width:768px){
+    section {
+        padding: 30px 15px;
+    }
+
+    #my-work {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+/* Media Query for moble phones and smaller */ 
+@media screen and (max-width:575px) {
+    .section-title {
+        width: 95%;
+    }
+
+    .work {
+        flex: 0 100%;
+    }
+
+    .Bio p {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    #my-work{
+        flex: 0 100%; 
+    }
+
+}
+
