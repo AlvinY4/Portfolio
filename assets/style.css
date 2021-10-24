@@ -14,6 +14,10 @@ header {
     font-family: Arial, Helvetica, sans-serif;
     background-color: darkslategray;
     color: #ffff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1; 
 }
 
 header h1 {
@@ -63,104 +67,104 @@ p{
 }
 
 .Bio {
-    margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    height: 400px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: grey;
     color: #ffff;
-    margin: 30px 30px 30px 30px; 
-    box-shadow: 0 0 20px black; 
-    border-style: solid;
-    border-width: 10px;
-    border-color: darkgrey; 
 }
 
 .Bio h2 {
     text-align: center;
+    color: darkslategray;
+    font-size: 40px; 
 }
 
 .Bio img {
     position: relative;
-    bottom: 40px;
-}
-
-.my-work {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 700px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: grey;
-    color: #ffff;
-    margin: 30px 30px 30px 30px; 
-    box-shadow: 0 0 20px black; 
+    bottom: 65px;
     border-style: solid;
+    border-color: darkgrey;
     border-width: 10px;
-    border-color: darkgrey; 
-    box-sizing: border-box; 
 }
 
-.works img {
-    max-height: 200px;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative; 
-    flex: 1 0 0;
-    padding: 10px;
+/* My Work Styles */
+
+#my-work {
+    padding: 50px;
+}
+.section-title {
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+    padding: 0 100px 20px 100px;
+    border-bottom: 3px solid dodgerblue;
+    padding-bottom: 20px;
     text-align: center;
-    margin: 20px;
+    margin: 0 auto 35px auto;
+    width: 50%;
 }
 
-.flex-1 {
-    width: 760px;
+.work{
+    margin: 20px;
+    background: darkslategray;
+    color: #ffff;
+    flex: 1;
 }
 
 .works {
+    width: 100%;
+    margin: 0 auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.flex-1 {
-    flex: 1 0 100%; 
-
+.work img {
+    width: 100%;
 }
 
-.flex-2 {
-    flex: 0 0 250px;
-
+.work-content {
+    padding: 25px;
+    line-height: 1.3;
 }
+
+.work-content h3 {
+    font-size: 28px; 
+}
+
+.work-name {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
 
 .resumes {
-    margin-bottom: 20px;
     padding: 50px;
     height: 300px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: grey;
     color: #ffff;
-    margin: 30px 30px 30px 30px; 
-    box-shadow: 0 0 20px black; 
-    border-style: solid;
-    border-width: 10px;
-    border-color: darkgrey; 
 }
 
+/* Footer Styles */ 
 footer {
+    background: darkslategray;
     width: 100%;
     padding: 40px 35px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     font-family: Arial, Helvetica, sans-serif;
-    color: darkslategray;
+    color: #ffff;
 }
 
 footer nav ul li {
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 10px;
 }
 
 footer nav ul li a {
-    color: darkslategray; 
+    color: #ffff; 
+    font-size: 20px;
 }
